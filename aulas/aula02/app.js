@@ -10,13 +10,15 @@ while(chute != numeroSecreto) {
 
     // se chute for igual ao número secreto
     if (chute == numeroSecreto) {
-        alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas`);
+        alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto} com ${tentativas} tentativas.`);
     } else {
+        // se nao, verificar se o chute é maior ou menor que o numero secreto
         if (chute > numeroSecreto) {
             alert(`O numero secreto e menor que ${chute}`);
         } else {
             alert(`O numero secreto e maior que ${chute}`);
         }
+        // incrementar o numero de tentativas
         tentativas++;
     }
     
