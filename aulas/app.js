@@ -1,14 +1,14 @@
 alert('Boas vindas ao jogo do número secreto');
 // definição de variaveis
-let multiplicador = 100
-let numeroSecreto = parseInt(Math.random() * multiplicador + 1);
+let numeroMaximo = prompt("Defina o valor maximo do número secreto");
+let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroSecreto);
 let chute;
 let tentativas = 1;
 
 // enquanto chute nao for igual ao numero secreto
 while(chute != numeroSecreto) {
-    chute = prompt(`Escolha um número entre 1 e ${multiplicador}`);
+    chute = prompt(`Escolha um número entre 1 e ${numeroMaximo}`);
 
     // se chute for igual ao número secreto
     if (chute == numeroSecreto) {
